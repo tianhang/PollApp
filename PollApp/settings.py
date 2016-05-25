@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'polls.apps.PollsConfig',
     'login.apps.LoginConfig',
+    'bootstrapform',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -90,7 +92,7 @@ DATABASES = {
         'NAME': 'd2',
         'USER': 'tianhang',
         'PASSWORD': '123456',
-        'HOST': '192.168.150.131',
+        'HOST': '192.168.150.132',
         'PORT': '3306',
     }
 }
