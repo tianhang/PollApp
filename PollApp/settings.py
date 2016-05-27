@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'd2',
         'USER': 'tianhang',
         'PASSWORD': '123456',
-        'HOST': '192.168.150.132',
+        'HOST': '192.168.150.133',
         'PORT': '3306',
     }
 }

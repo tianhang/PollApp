@@ -6,6 +6,7 @@ app_name = 'login'
 
 urlpatterns = [
     url(r'^login$', views.LoginView.as_view(), name='login'),
+    url(r'^exit$', views.LoginOutView.as_view(), name='exit'),
     url(r'^thanks$', views.ThanksView.as_view(), name='thanks'),
     # ex: /polls/5/
     #url(r'^(?P<pk>[0-9]+)/$', DetailView.as_view(), name='detail'),

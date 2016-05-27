@@ -2,10 +2,11 @@ from django.conf.urls import url
 
 from . import views
 from .views import IndexView,DetailView,ResultsView
+from django.contrib.auth.decorators import login_required
 
 app_name = 'polls'
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', login_required(views.index), name='index'),
     # ex: /polls/5/
     url(r'^(?P<pk>[0-9]+)/$', DetailView.as_view(), name='detail'),
     # ex: /polls/5/results/
